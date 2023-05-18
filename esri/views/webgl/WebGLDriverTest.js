@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define("exports ./testAppleAmdDrawArrays ./testDoublePrecisionArithmetic ./testFloatBufferBlend ./testSamplerPrecision ./testSVGPremultipliedAlpha".split(" "),function(b,d,e,f,g,h){let k=function(){function c(a){this.rctx=a;this.floatBufferBlend=new f.FloatBufferBlend(a);this.svgPremultipliesAlpha=new h.SVGPremultipliedAlpha(a);this.doublePrecisionRequiresObfuscation=new e.DoublePrecisionRequiresObfuscation(a);this.ignoresSamplerPrecision=new g.IgnoresSamplerPrecision(a);this.drawArraysRequiresIndicesTypeReset=
+new d.DrawArraysRequiresIndicesTypeReset(a)}c.prototype.dispose=function(){this.ignoresSamplerPrecision.dispose();this.doublePrecisionRequiresObfuscation.dispose();this.svgPremultipliesAlpha.dispose();this.floatBufferBlend.dispose();this.drawArraysRequiresIndicesTypeReset.dispose()};return c}();b.WebGLDriverTest=k;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports"],function(a){let g=function(){function b(c,d,e,f){this.visibleLineVisualElement=c;this.occludedLineVisualElement=d;this.undefinedLineVisualElement=e;this.targetVisualElement=f}b.prototype.destroy=function(){this.visibleLineVisualElement.destroy();this.occludedLineVisualElement.destroy();this.undefinedLineVisualElement.destroy();this.targetVisualElement.destroy()};return b}();a.LineOfSightVisualElement=g;Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports"],function(f){function h(){}let m=function(){function d(a){this._notify=a;this._accessed=[];this._handles=[];this._observerObject=new k(this._notify);g.register(this,this._observerObject)}var c=d.prototype;c.destroy=function(){this._accessed.length=0;this._observerObject?.destroy();this.clear();g.unregister(this)};c.onObservableAccessed=function(a){const b=this._accessed;b.includes(a)||b.push(a)};c.onTrackingEnd=function(){const a=this._handles,b=this._accessed,l=this._observerObject;
+for(let e=0;e<b.length;++e)a.push(b[e].observe(l));b.length=0};c.clear=function(){const a=this._handles;for(let b=0;b<a.length;++b)a[b].remove();a.length=0};return d}(),k=function(){function d(a){this._notify=a;this._invalidCount=0;this.destroyed=!1}var c=d.prototype;c.onInvalidated=function(){this._invalidCount++};c.onCommitted=function(){if(!this.destroyed){var a=this._invalidCount;1===a?(this._invalidCount=0,this._notify()):this._invalidCount=0<a?a-1:0}};c.destroy=function(){this.destroyed=!0;
+this._notify=h};return d}();const g=new FinalizationRegistry(d=>{d.destroy()});f.SimpleTrackingTarget=m;Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

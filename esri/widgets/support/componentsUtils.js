@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/dom ../../assets ../../core/has ../../core/urlUtils ../../chunks/index".split(" "),function(d,e,k,p,l,m){function f(){const {classList:g}=document.body,n=window.matchMedia("(prefers-color-scheme: dark)").matches,h=()=>g.contains(e.darkMode)||g.contains(e.autoMode)&&n?"dark":"light",c=a=>document.body.dispatchEvent(new CustomEvent("calciteModeChange",{bubbles:!0,detail:{mode:a}}));let b=h();c(b);window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",
+a=>{a=a.matches?"dark":"light";b!==a&&c(a);b=a});(new MutationObserver(()=>{var a=h();b!==a&&c(a);b=a})).observe(document.body,{attributes:!0,attributeFilter:["class"]})}(function(){"undefined"!==typeof window&&"undefined"!==typeof location&&"undefined"!==typeof document&&window.location===location&&window.document===document&&("interactive"===document.readyState?f():document.addEventListener("DOMContentLoaded",()=>f(),{once:!0}))})();d.commitAssetPath=function(){m.setAssetPath(l.makeAbsolute(k.getAssetUrl("esri/widgets/support/components/assets")))};
+Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../../chunks/_rollupPluginBabelHelpers","../../../assets","../../../core/has"],function(h,c,k,l,p){function d(){d=k._asyncToGenerator(function*(){var a=e??m;if(a)return a;a=p("wasm-simd");return m=n(a)});return d.apply(this,arguments)}function n(a){return f.apply(this,arguments)}function f(){f=k._asyncToGenerator(function*(a){if(a)return{default:a}=yield(new Promise((b,g)=>h(["../../../chunks/arcgis-knowledge-client-core-simd"],b,g))).then(b=>b.arcgisKnowledgeClientCoreSimd),
+a({locateFile:b=>l.getAssetUrl("esri/rest/knowledgeGraph/wasmInterface/"+b)});({default:a}=yield(new Promise((b,g)=>h(["../../../chunks/arcgis-knowledge-client-core"],b,g))).then(b=>b.arcgisKnowledgeClientCore));return a({locateFile:b=>l.getAssetUrl("esri/rest/knowledgeGraph/wasmInterface/"+b)})});return f.apply(this,arguments)}let e=null,m;c.getNewInterface=n;c.getWasmInterface=function(){return d.apply(this,arguments)};c.test={setWasmInterfacePromise:a=>e=a,restoreWasmInterfacePromise:()=>e=null};
+Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

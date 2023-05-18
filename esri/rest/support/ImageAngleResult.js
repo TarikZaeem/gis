@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../geometry ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/accessorSupport/decorators/subclass ../../geometry/SpatialReference".split(" "),function(g,c,a,h,d,m,n,k,l){a=function(e){function f(b){b=e.call(this,b)||this;b.north=null;b.up=null;b.spatialReference=null;return b}g._inheritsLoose(f,e);return f}(h.JSONSupport);c.__decorate([d.property({type:Number,
+json:{write:!0}})],a.prototype,"north",void 0);c.__decorate([d.property({type:Number,json:{write:!0}})],a.prototype,"up",void 0);c.__decorate([d.property({type:l,json:{write:!0}})],a.prototype,"spatialReference",void 0);return a=c.__decorate([k.subclass("esri.rest.support.ImageAngleResult")],a)});

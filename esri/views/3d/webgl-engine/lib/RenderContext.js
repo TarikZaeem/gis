@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../core/maybe ../../../../core/time ../core/shaderLibrary/ShaderOutput ./BindParameters ./Camera ./Material".split(" "),function(e,m,n,p,q,r,t,f){let k=function(){function b(d,a,g,c=null){this.rctx=d;this.sliceHelper=c;this.lastFrameCamera=new t.Camera;this.output=q.ShaderOutput.Color;this.renderOccludedMask=h;this.bindParameters=new r.BindParameters(a,g,n.isSome(c)?c.plane:null)}b.prototype.resetRenderOccludedMask=function(){this.renderOccludedMask=
+h};return b}(),v=function(b){function d(a,g,c,u,l){a=b.call(this,a,c,u,l)||this;a.offscreenRenderingHelper=g;a.sliceHelper=l;a.time=p.Milliseconds(0);return a}m._inheritsLoose(d,b);return d}(k);const h=f.RenderOccludedFlag.Occlude|f.RenderOccludedFlag.OccludeAndTransparent|f.RenderOccludedFlag.OccludeAndTransparentStencil;e.OverlayRenderContext=k;e.RenderContext=v;Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})});

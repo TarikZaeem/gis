@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../webgl/BufferObject","../../../webgl/enums"],function(c,e,a){let g=function(){function d(f){this._rctx=f;this._indexBuffer=this._createIndexbuffer();this._program=this._createProgram()}var b=d.prototype;b._createProgram=function(){return this._rctx.programCache.acquire("\n    void main(void) {\n      gl_Position \x3d vec4(0.0, 0.0, float(gl_VertexID)-2.0, 1.0);\n    }","\n    void main(void) {\n      gl_FragColor \x3d vec4(0.0, 0.0, 0.0, 1.0);\n    }",new Map([]))};b._createIndexbuffer=
+function(){return e.BufferObject.createIndex(this._rctx,a.Usage.STATIC_DRAW,new Uint32Array([0]))};b.resetIndicesType=function(){this._program.compiled&&this._indexBuffer&&(this._rctx.bindVAO(null),this._rctx.useProgram(this._program),this._rctx.bindBuffer(this._indexBuffer,a.BufferType.ELEMENT_ARRAY_BUFFER),this._rctx.drawElements(a.PrimitiveType.POINTS,1,a.DataType.UNSIGNED_INT,0))};b.dispose=function(){this._program.dispose();this._indexBuffer.dispose()};return d}();c.AppleAmdDriverHelper=g;Object.defineProperty(c,
+Symbol.toStringTag,{value:"Module"})});

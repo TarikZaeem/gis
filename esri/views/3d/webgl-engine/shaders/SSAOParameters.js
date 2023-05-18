@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../../chunks/vec2f64","../core/shaderModules/interfaces"],function(d,f,h,e){let g=function(a){function b(){var c=a.apply(this,arguments)||this;c.projScale=1;return c}f._inheritsLoose(b,a);return b}(e.NoParameters),k=function(a){function b(){var c=a.apply(this,arguments)||this;c.intensity=1;return c}f._inheritsLoose(b,a);return b}(g);e=function(a){function b(){return a.apply(this,arguments)||this}f._inheritsLoose(b,a);return b}(e.NoParameters);
+let l=function(a){function b(){var c=a.apply(this,arguments)||this;c.blurSize=h.create();return c}f._inheritsLoose(b,a);return b}(e);d.BlurDrawParameters=l;d.BlurPassParameters=g;d.SSAODrawParameters=e;d.SSAOPassParameters=k;Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

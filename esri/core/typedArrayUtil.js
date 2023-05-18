@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","./maybe"],function(b,c){b.NATIVE_ARRAY_MAX_SIZE=1024;b.estimateSize=function(a){return c.isSome(a)?128+a.buffer.byteLength+64:0};b.isArrayBuffer=function(a){return a instanceof ArrayBuffer};b.isFloat32Array=function(a){return a&&a.constructor&&"Float32Array"===a.constructor.name};b.isFloat64Array=function(a){return a&&a.constructor&&"Float64Array"===a.constructor.name};b.isInt16Array=function(a){return a&&a.constructor&&"Int16Array"===a.constructor.name};b.isInt32Array=function(a){return a&&
+a.constructor&&"Int32Array"===a.constructor.name};b.isInt8Array=function(a){return a&&a.constructor&&"Int8Array"===a.constructor.name};b.isUint16Array=function(a){return a&&a.constructor&&"Uint16Array"===a.constructor.name};b.isUint32Array=function(a){return a&&a.constructor&&"Uint32Array"===a.constructor.name};b.isUint8Array=function(a){return a&&a.constructor&&"Uint8Array"===a.constructor.name};b.isUint8ClampedArray=function(a){return a&&a.constructor&&"Uint8ClampedArray"===a.constructor.name};
+Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

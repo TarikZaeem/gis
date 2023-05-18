@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../chunks/_rollupPluginBabelHelpers","../kernel","../request","../portal/Portal"],function(c,g,h,f,k){function d(){d=g._asyncToGenerator(function*(a,b,e){if(!h.id?.findCredential(a.restUrl))return null;if("loaded"===a.loadStatus&&""===b&&a.user&&a.user.sourceJSON&&!1===e)return a.user.sourceJSON;if(""===b)return a=yield f(a.restUrl+"/community/self",{responseType:"json",query:{f:"json",...(!1===e?{}:{returnUserLicenseTypeExtensions:!0})}}),a.data&&(a=a.data)&&a.username?a:null;
+a=yield f(a.restUrl+"/community/users/"+b,{responseType:"json",query:{f:"json"}});return a.data?(a=a.data,a.error?null:a):null});return d.apply(this,arguments)}c.getPortal=function(a,b){return null===a?b:new k({url:a.field("url")})};c.lookupUser=function(a,b,e){return d.apply(this,arguments)};Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

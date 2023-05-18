@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../request","../../../core/Error","../../utils"],function(f,k,l,m,d){function e(){e=k._asyncToGenerator(function*(b,a,c,g,h){if(!a)throw new m("stop-editing:missing-guid","guid for version is missing");b=d.parseUrl(b);c=d.asValidOptions(b.query,{query:d.encode({sessionId:c,saveEdits:g,f:"json"}),...h,method:"post"});a.startsWith("{")&&(a=a.slice(1,-1));({data:a}=yield l(`${b.path}/versions/${a}/stopEditing`,c));return a?a.success:
+!1});return e.apply(this,arguments)}f.stopEditing=function(b,a,c,g,h){return e.apply(this,arguments)};Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

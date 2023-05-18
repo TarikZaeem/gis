@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","./tracking/ObservationHandle"],function(g,l){let p=function(){function h(){this._observers=null;this.destroyed=!1}var e=h.prototype;e.observe=function(a){if(this.destroyed||a.destroyed)return m;null==this._observers&&(this._observers=[]);const b=this._observers;let c=!1,d=!1;const n=b.length;for(let f=0;f<n;++f){const k=b[f];if(k.destroyed)d=!0;else if(k===a){c=!0;break}}c||(b.push(a),d&&this._removeDestroyedObservers());return new l.ObservationHandle(b,a)};e._removeDestroyedObservers=
+function(){const a=this._observers;if(a&&0!==a.length){var b=a.length,c=0;for(let d=0;d<b;++d){for(;d+c<b;)if(a[d+c].destroyed)++c;else break;if(0<c)if(d+c<b)a[d]=a[d+c];else break}a.length=b-c}};e.destroy=function(){if(!this.destroyed){this.destroyed=!0;var a=this._observers;if(null!=a){for(const b of a)b.onCommitted();this._observers=null}}};return h}();const m={remove:()=>{}};g.ObservableBase=p;Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

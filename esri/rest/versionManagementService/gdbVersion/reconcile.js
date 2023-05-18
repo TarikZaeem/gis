@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../request ../../../core/Error ../../utils ./support/ReconcileResult".split(" "),function(g,h,k,l,e,m){function f(){f=h._asyncToGenerator(function*(b,a,c,d){if(!a)throw new l("reconcile:missing-guid","guid for version is missing");b=e.parseUrl(b);c=c.toJSON();d=e.asValidOptions(b.query,{query:e.encode({...c,f:"json"}),...d,method:"post"});a.startsWith("{")&&(a=a.slice(1,-1));({data:a}=yield k(`${b.path}/versions/${a}/reconcile`,d));return m.fromJSON(a)});
+return f.apply(this,arguments)}g.reconcile=function(b,a,c,d){return f.apply(this,arguments)};Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

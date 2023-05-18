@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../lib/VertexAttribute","./internal/bufferWriterUtils"],function(c,e,f){let m=function(){function d(a){this.vertexBufferLayout=a}var b=d.prototype;b.allocate=function(a){return this.vertexBufferLayout.createBuffer(a)};b.elementCount=function(a){return a.indices.get(e.VertexAttribute.POSITION).length};b.write=function(a,g,h,k,l){f.writeDefaultAttributes(h,this.vertexBufferLayout,a,g,k,l)};return d}();c.DefaultBufferWriter=m;Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

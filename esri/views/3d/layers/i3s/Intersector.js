@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../webgl-engine/lib/IntersectorInterfaces","../../webgl-engine/lib/IntersectorTarget","../../webgl-engine/lib/intersectorUtils"],function(d,k,l,g,m){let p=function(a){function c(e,b,h,n){b=a.call(this,b,h)||this;b.point=e;b.createGraphic=n;return b}k._inheritsLoose(c,a);return c}(g.Graphic3DTarget),r=function(a){function c(e,b,h,n,q){var f=a.call(this,e)||this;f.layerUid=e;f.sublayerUid=b;f.nodeIndex=h;f.componentIndex=n;f.triangleNr=
+q;return f}k._inheritsLoose(c,a);return c}(g.LayerTarget);g=function(a){function c(e,b,h){b=a.call(this,b,null)||this;b.point=e;b.createVoxelGraphic=h;return b}k._inheritsLoose(c,a);return c}(g.Graphic3DTarget);d.I3sTarget=r;d.PclTarget=p;d.VoxelTarget=g;d.isI3sIntersectorResult=function(a){return m.isValidIntersectorResult(a)&&a.intersector===l.IntersectorType.I3S&&!!a.target};d.isPclIntersectorResult=function(a){return m.isValidIntersectorResult(a)&&a.intersector===l.IntersectorType.PCL&&!!a.target};
+d.isVoxelIntersectorResult=function(a){return m.isValidIntersectorResult(a)&&a.intersector===l.IntersectorType.VOXEL&&!!a.target};Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers","../../layers/support/mediaUtils"],function(b,f,d){function c(){c=f._asyncToGenerator(function*(a,e){return d.createDefaultControlPointsGeoreference(a,e)});return c.apply(this,arguments)}b.createDefaultControlPointsGeoreference=function(a,e){return c.apply(this,arguments)};b.createLocalModeControlPointsGeoreference=function(a){return d.createLocalModeControlPointsGeoreference(a)};Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

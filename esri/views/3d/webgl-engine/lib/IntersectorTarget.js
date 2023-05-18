@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../../core/maybe","../../../../chunks/vec3f64"],function(d,e,m,n){let g=function(a,c,b){this.object=a;this.geometryId=c;this.triangleNr=b},k=function(a){function c(b,f,p,h){b=a.call(this,b,f,p)||this;b.center=m.isSome(h)?n.clone(h):null;return b}e._inheritsLoose(c,a);return c}(g),q=function(a){function c(){return a.apply(this,arguments)||this}e._inheritsLoose(c,a);return c}(k),l=function(a){this.layerUid=a},r=function(a){function c(b,
+f){b=a.call(this,b)||this;b.graphicUid=f;return b}e._inheritsLoose(c,a);return c}(l);d.Graphic3DTarget=r;d.HudTarget=k;d.LayerTarget=l;d.ObjectTarget=g;d.ValidHudTarget=q;Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

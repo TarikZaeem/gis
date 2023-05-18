@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.26/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Clonable ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/accessorSupport/decorators/subclass ../../time/TimeReference".split(" "),function(g,c,a,h,d,m,n,k,l){a=function(e){function f(b){b=e.call(this,b)||this;b.creatorField=null;b.creationDateField=null;b.editorField=null;b.editDateField=null;b.realm=null;b.dateFieldsTimeReference=
+null;return b}g._inheritsLoose(f,e);return f}(a.ClonableMixin(h.JSONSupport));c.__decorate([d.property()],a.prototype,"creatorField",void 0);c.__decorate([d.property()],a.prototype,"creationDateField",void 0);c.__decorate([d.property()],a.prototype,"editorField",void 0);c.__decorate([d.property()],a.prototype,"editDateField",void 0);c.__decorate([d.property()],a.prototype,"realm",void 0);c.__decorate([d.property({type:l})],a.prototype,"dateFieldsTimeReference",void 0);return a=c.__decorate([k.subclass("esri.layers.support.EditFieldsInfo")],
+a)});
